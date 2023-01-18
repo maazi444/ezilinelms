@@ -1,13 +1,6 @@
 /node_modules
 
-/public/hot
-/public/storage
-/public/css
-/public/js
-/public/media
-/public/plugins
 
-/public/demo1
 /public/demo2
 /public/demo3
 /public/demo4
@@ -23,7 +16,7 @@
 
 /storage/*.key
 /vendor
-.env
+
 .env.backup
 .phpunit.result.cache
 docker-compose.override.yml
