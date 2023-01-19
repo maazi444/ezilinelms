@@ -21,15 +21,13 @@
             <div class="row fv-row mb-7">
                 <!--begin::Col-->
                 <div class="col-xl-6">
-                    <input class="form-control form-control-lg form-control-solid" type="text" name="first_name" autocomplete="off" value="{{ old('first_name') }}" placeholder="First Name" required />
-                    <span class="text-danger" id="errorMsg"></span>
+                    <input class="form-control form-control-lg form-control-solid" type="text" name="first_name" value="Test{{ old('first_name') }}" placeholder="First Name" />
                 </div>
                 <!--end::Col-->
 
                 <!--begin::Col-->
                 <div class="col-xl-6">
-                    <input class="form-control form-control-lg form-control-solid" type="text" name="last_name" autocomplete="off" value="{{ old('last_name') }}" placeholder="Last Name" required />
-                    <span class="text-danger" id="errorMsg"></span>
+                    <input class="form-control form-control-lg form-control-solid" type="text" name="last_name" value="User{{ old('last_name') }}" placeholder="Last Name" />
                 </div>
                 <!--end::Col-->
             </div>
@@ -39,27 +37,54 @@
             <!--begin::Input group=-->
             <div class="fv-row mb-8 fv-plugins-icon-container fv-plugins-bootstrap5-row-valid">
                 <!--begin::Email-->
-                <input type="text" placeholder="Email" name="email" autocomplete="off" class="form-control bg-transparent" required>
-                <span class="text-danger" id="errorMsg"></span>
+                <input type="text" placeholder="Email" name="email" class="form-control bg-transparent" value="maazahmad@gmail.com{{ old('email') }}">
                 <!--end::Email-->
             </div>
             <!--end::Input group=-->
 
-            <!--begin::Input group=-->
-            <div class="fv-row mb-8 fv-plugins-icon-container fv-plugins-bootstrap5-row-valid">
-                <!--begin::Contact-->
-                <input type="text" placeholder="Phone Number" name="contact" autocomplete="off" class="form-control bg-transparent">
-                <span class="text-danger" id="errorMsg"></span>
-                <!--end::Contact-->
+            <!--begin::Input group-->
+            <div class="row fv-row mb-7">
+                <!--begin::Col-->
+                <div class="col-xl-6">
+                <select class="form-control" name="country">
+                        <option value="US">United States</option>
+                        <option value="BG">Bulgaria</option>
+                        <option value="BR">Brazil</option>
+                        <option value="CN">China</option>
+                        <option value="CZ">Czech Republic</option>
+                        <option value="DK">Denmark</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                        <option value="IN">India</option>
+                        <option value="MA">Morocco</option>
+                        <option value="NL">Netherlands</option>
+                        <option value="PK">Pakistan</option>
+                        <option value="RO">Romania</option>
+                        <option value="RU">Russia</option>
+                        <option value="SK">Slovakia</option>
+                        <option value="ES">Spain</option>
+                        <option value="TH">Thailand</option>
+                        <option value="AE">United Arab Emirates</option>
+                        <option value="GB">United Kingdom</option>
+                        <option value="VE">Venezuela</option>
+                    </select>
+                </div>
+                <!--end::Col-->
+
+                <!--begin::Col-->
+                <div class="col-xl-6">
+                <input type="text" placeholder="Phone Number" name="phoneNumber" autocomplete="off" class="form-control bg-transparent" maxlength="10" value="3421174589">
+                </div>
+                <!--end::Col-->
             </div>
-            <!--end::Input group=-->
+            <!--end::Input group-->
+
 
             <!--begin::Input group=-->
             <div class="fv-row mb-8 fv-plugins-icon-container fv-plugins-bootstrap5-row-valid">
                 <!--begin::DOB-->
                 <label for="dob">Date of Birth: </label>
                 <input type="date" id="dob" name="dob" autocomplete="off" class="form-control bg-transparent">
-                <span class="text-danger" id="errorMsg"></span>
                 <!--end::DOB-->
             </div>
             <!--end::Input group=-->
@@ -79,12 +104,11 @@
 
         <!-- ------------------------------- Step TWO Start ----------------------------- -->
 
-        <div id="stepTwo">
+        <div id="stepTwo" style="display: none;">
             <!--begin::Input group=-->
             <div class="fv-row mb-8 fv-plugins-icon-container fv-plugins-bootstrap5-row-valid">
                 <!--begin::CNIC-->
-                <input type="text" placeholder="CNIC" name="cnic" autocomplete="off" class="form-control bg-transparent" required>
-                <span class="text-danger" id="errorMsg"></span>
+                <input type="text" placeholder="CNIC without -" name="cnic" autocomplete="off" class="form-control bg-transparent" value="1234567891234" maxlength="13">
                 <!--end::CNIC-->
             </div>
             <!--end::Input group=-->
@@ -92,8 +116,7 @@
             <!--begin::Input group=-->
             <div class="fv-row mb-8 fv-plugins-icon-container fv-plugins-bootstrap5-row-valid">
                 <!--begin::Current Degree-->
-                <input type="text" placeholder="Current Degree" name="degree" autocomplete="off" class="form-control bg-transparent" required>
-                <span class="text-danger" id="errorMsg"></span>
+                <input type="text" placeholder="Current Degree" name="degree" value="Inter" class="form-control bg-transparent">
                 <!--end::Current Degree-->
             </div>
             <!--end::Input group=-->
@@ -101,8 +124,7 @@
             <!--begin::Input group=-->
             <div class="fv-row mb-8 fv-plugins-icon-container fv-plugins-bootstrap5-row-valid">
                 <!--begin::University-->
-                <input type="text" placeholder="University" name="university" autocomplete="off" class="form-control bg-transparent" required>
-                <span class="text-danger" id="errorMsg"></span>
+                <input type="text" placeholder="University" name="university" class="form-control bg-transparent" value="IIUI">
                 <!--end::University-->
             </div>
             <!--end::Input group=-->
@@ -110,8 +132,7 @@
             <!--begin::Input group=-->
             <div class="fv-row mb-8 fv-plugins-icon-container fv-plugins-bootstrap5-row-valid">
                 <!--begin::Technology-->
-                <input type="text" placeholder="Technology" name="technology" autocomplete="off" class="form-control bg-transparent" required>
-                <span class="text-danger" id="errorMsg"></span>
+                <input type="text" placeholder="Technology" name="technology" autocomplete="off" class="form-control bg-transparent" value="Python">
                 <!--end::Technology-->
             </div>
             <!--end::Input group=-->
@@ -126,9 +147,6 @@
                         Next
                     </button>
                 </div>
-                <button type="submit" id="kt_sign_up_submit" class="btn btn-primary" style="display: none;">
-                    @include('partials.general._button-indicator')
-                </button>
             </div>
             <!--end::Navigation button-->
         </div>
@@ -137,19 +155,18 @@
 
         <!-- ------------------------------- Step THREE Start ----------------------------- -->
 
-        <div id="stepThree">
+        <div id="stepThree" style="display: none;">
             <!--begin::Input group=-->
             <div class="fv-row mb-8 fv-plugins-icon-container fv-plugins-bootstrap5-row-valid">
                 <!--begin::Duration-->
                 <select name="duration" class="form-control bg-transparent" required>
-                    <option value="" selected="" disabled>Duration</option>
+                    <option value="">Duration</option>
                     <option value="1">1 Month</option>
                     <option value="2">2 Months</option>
                     <option value="3">3 Months</option>
                     <option value="4">4 Months</option>
                     <option value="5">5 Months</option>
                 </select>
-                <span class="text-danger" id="errorMsg"></span>
                 <!--end::Duration-->
             </div>
             <!--end::Input group=-->
@@ -159,7 +176,6 @@
                 <!--begin::Join Date-->
                 <label for="joinDate">Join Date:</label>
                 <input type="date" id="joinDate" name="joinDate" class="form-control bg-transparent" required>
-                <span class="text-danger" id="errorMsg"></span>
                 <!--end::Join Date-->
             </div>
             <!--end::Input group=-->
@@ -168,11 +184,10 @@
             <div class="fv-row mb-8 fv-plugins-icon-container fv-plugins-bootstrap5-row-valid">
                 <!--begin::Environment-->
                 <select name="environment" class="form-control bg-transparent" required>
-                    <option value="" selected="" disabled>Environment</option>
+                    <option value="" selected="" disabled>Environment Type</option>
                     <option value="homeBase">Home Base</option>
                     <option value="officeBase">Office Base</option>
                 </select>
-                <span class="text-danger" id="errorMsg"></span>
                 <!--end::Environment-->
             </div>
             <!--end::Input group=-->
@@ -182,7 +197,6 @@
                 <!--begin::Shift-->
                 <label for="shift">Shift:</label>
                 <input type="time" id="shift" name="shift" autocomplete="off" class="form-control bg-transparent" required>
-                <span class="text-danger" id="errorMsg"></span>
                 <!--end::Shift-->
             </div>
             <!--end::Input group=-->
@@ -213,9 +227,7 @@
 
 </x-auth-layout>
 
-<script>
-    var inpObjs = document.getElementsByTagName('input');
-    // console.log(inpObjs[0]);
+<!-- <script>
     var stepOne = document.querySelector('#stepOne');
     var stepOneNxtBtn = document.querySelector('#stepOneNxtBtn');
     var stepTwo = document.querySelector('#stepTwo');
@@ -224,28 +236,10 @@
     var stepThree = document.querySelector('#stepThree');
     var stepThreeBackBtn = document.querySelector('#stepThreeBackBtn');
 
-    stepTwo.style.display = "none";
-    stepThree.style.display = "none";
-
     stepOneNxtBtn.addEventListener('click', (e) => {
         e.preventDefault();
-
-        for (var i = 0; i < 5; i++) {
-            var inpObj = inpObjs[i];
-            if (!inpObj.checkValidity()) {
-                let errorMsg = inpObj.nextElementSibling;
-                errorMsg.innerHTML = inpObj.validationMessage;
-                console.log(inpObj.validationMessage);
-
-                stepOne.style.display = "block";
-                stepTwo.style.display = "none";
-                stepThree.style.display = "none";
-            } else {
-
-            }
-        }
-
-
+        stepOne.style.display = "none";
+        stepTwo.style.display = "block";
     });
 
     stepTwoBackBtn.addEventListener('click', (e) => {
@@ -266,4 +260,4 @@
         stepTwo.style.display = "block";
         stepThree.style.display = "none";
     });
-</script>
+</script> -->

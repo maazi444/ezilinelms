@@ -6,12 +6,13 @@ var KTSignupGeneral = function () {
     var form;
     var submitButton;
     var validator;
-    var passwordMeter;
+    var validator1;
+    var validator2;
 
     // Handle form
     var handleForm = function (e) {
         // Init form validation rules. For more info check the FormValidation plugin's official documentation:https://formvalidation.io/
-        validator = FormValidation.formValidation(
+        validator1 = FormValidation.formValidation(
             form,
             {
                 fields: {
@@ -39,48 +40,28 @@ var KTSignupGeneral = function () {
                             }
                         }
                     },
-                    'password': {
+                    'phoneNumber': {
                         validators: {
                             notEmpty: {
-                                message: 'The password is required'
+                                message: 'Phone Number is required'
                             },
-                            callback: {
-                                message: 'Please enter valid password',
-                                callback: function (input) {
-                                    if (input.value.length > 0) {
-                                        return validatePassword();
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    'confirm-password': {
-                        validators: {
-                            notEmpty: {
-                                message: 'The password confirmation is required'
-                            },
-                            identical: {
-                                compare: function () {
-                                    return form.querySelector('[name="password"]').value;
+                            phone: {
+                                country: function () {
+                                    return form.querySelector('[name="country"]').value;
                                 },
-                                message: 'The password and its confirm are not the same'
+                                message: 'This is not a valid phone number',
+                            },
+                        }
+                    },
+                    'dob': {
+                        validators: {
+                            notEmpty: {
+                                message: 'Date of Birth is required'
                             }
                         }
                     },
-                    'toc': {
-                        validators: {
-                            notEmpty: {
-                                message: 'You must accept the terms and conditions'
-                            }
-                        }
-                    }
                 },
                 plugins: {
-                    trigger: new FormValidation.plugins.Trigger({
-                        event: {
-                            password: false
-                        }
-                    }),
                     bootstrap: new FormValidation.plugins.Bootstrap5({
                         rowSelector: '.fv-row',
                         eleInvalidClass: '',
@@ -89,6 +70,167 @@ var KTSignupGeneral = function () {
                 }
             }
         );
+
+        validator2 = FormValidation.formValidation(
+            form,
+            {
+                fields: {
+                    'cnic': {
+                        validators: {
+                            notEmpty: {
+                                message: 'CNIC is required'
+                            },
+                            numeric: {
+                                message: 'CNIC is not numeric'
+                            }
+                        }
+                    },
+                    'degree': {
+                        validators: {
+                            notEmpty: {
+                                message: 'Current degree is required'
+                            }
+                        }
+                    },
+                    'university': {
+                        validators: {
+                            notEmpty: {
+                                message: 'University is required'
+                            }
+                        }
+                    },
+                    'technology': {
+                        validators: {
+                            notEmpty: {
+                                message: 'Technology is required'
+                            }
+                        }
+                    },
+                },
+                plugins: {
+                    
+                    bootstrap: new FormValidation.plugins.Bootstrap5({
+                        rowSelector: '.fv-row',
+                        eleInvalidClass: '',
+                        eleValidClass: ''
+                    })
+                }
+            }
+        );
+
+        // begin: Get current Date
+
+        const date = new Date();
+
+        let day = date.getDate();
+        let month = date.getMonth() + 1;
+        let year = date.getFullYear();
+
+        let currentDate = `0${month}/${day}/${year}`;
+        console.log(currentDate);
+        
+        // end: Get current Date
+
+        validator = FormValidation.formValidation(
+            form,
+            {
+                fields: {
+                    'duration': {
+                        validators: {
+                            notEmpty: {
+                                message: "Course duration is required"
+                            }
+                        }
+                    },
+                    'joinDate': {
+                        validators: {
+                            notEmpty: {
+                                message: "Date of Joining is required"
+                            },
+                        }
+                    },
+                    'environment': {
+                        validators: {
+                            notEmpty: {
+                                message: "Environment Type is required"
+                            },
+                        }
+                    },
+                    'shift': {
+                        validators: {
+                            notEmpty: {
+                                message: "Shift Time is required"
+                            },
+                        }
+                    },
+                    'toc': {
+                        validators: {
+                            notEmpty: {
+                                message: 'You must accept the terms and conditions'
+                            }
+                        }
+                    },
+                },
+                plugins: {
+                    
+                    bootstrap: new FormValidation.plugins.Bootstrap5({
+                        rowSelector: '.fv-row',
+                        eleInvalidClass: '',
+                        eleValidClass: ''
+                    })
+                }
+            }
+        );
+
+        var stepOne = document.querySelector('#stepOne');
+        var stepTwo = document.querySelector('#stepTwo');
+        var stepThree = document.querySelector('#stepThree');
+        var stepOneNxtBtn = document.querySelector("#stepOneNxtBtn");
+        var stepTwoNxtBtn = document.querySelector("#stepTwoNxtBtn");
+        var stepTwoBackBtn = document.querySelector('#stepTwoBackBtn');
+        var stepThreeBackBtn = document.querySelector('#stepThreeBackBtn');
+
+        stepOneNxtBtn.addEventListener('click', function(e){
+            e.preventDefault();
+            validator1.validate().then(function(status){
+                if (status === 'Valid') {
+                    stepOne.style.display = "none";
+                    stepTwo.style.display = "block";
+                }
+                else{
+                    stepOne.style.display = "block";
+                    stepTwo.style.display = "none";
+                }
+            });
+            
+            
+        });
+
+        stepTwoBackBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            stepTwo.style.display = "none";
+            stepOne.style.display = "block";
+        });
+
+        stepTwoNxtBtn.addEventListener('click', function(e){
+            e.preventDefault();
+            validator2.validate().then(function(status){
+                if (status === 'Valid') {
+                    stepTwo.style.display = "none";
+                    stepThree.style.display = "block";
+                }
+                else{
+                    stepTwo.style.display = "block";
+                    stepThree.style.display = "none";
+                }
+            });
+        });
+
+        stepThreeBackBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            stepThree.style.display = "none";
+            stepTwo.style.display = "block";
+        });
 
         // Handle form submit
         submitButton.addEventListener('click', function (e) {
@@ -119,7 +261,6 @@ var KTSignupGeneral = function () {
                             }).then(function (result) {
                                 if (result.isConfirmed) {
                                     form.querySelector('[name="email"]').value = "";
-                                    form.querySelector('[name="password"]').value = "";
                                     window.location.reload();
                                 }
                             });
@@ -167,18 +308,6 @@ var KTSignupGeneral = function () {
                 }
             });
         });
-
-        // Handle password input
-        form.querySelector('input[name="password"]').addEventListener('input', function () {
-            if (this.value.length > 0) {
-                validator.updateFieldStatus('password', 'NotValidated');
-            }
-        });
-    }
-
-    // Password input validation
-    var validatePassword = function () {
-        return (passwordMeter.getScore() > 50);
     }
 
     // Public functions
@@ -187,8 +316,6 @@ var KTSignupGeneral = function () {
         init: function () {
             form = document.querySelector('#kt_sign_up_form');
             submitButton = document.querySelector('#kt_sign_up_submit');
-            passwordMeter = KTPasswordMeter.getInstance(form.querySelector('[data-kt-password-meter="true"]'));
-
             handleForm();
         }
     };
