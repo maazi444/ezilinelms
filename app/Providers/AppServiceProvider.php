@@ -33,8 +33,7 @@ class AppServiceProvider extends ServiceProvider
         View::share('theme', $theme);
 
         // Set demo globally
-        $theme->setDemo(request()->input('demo', 'demo1'));
-        // $theme->setDemo('demo2');
+        $theme->setDemo('demo1');
 
         $theme->initConfig();
 

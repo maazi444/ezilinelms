@@ -15,7 +15,7 @@ class PagesController extends Controller
     {
         // Get view file location from menu config
         $view = theme()->getOption('page', 'view');
-
+        
         // Check if the page view file exist
         if (view()->exists('pages.'.$view)) {
             return view('pages.'.$view);

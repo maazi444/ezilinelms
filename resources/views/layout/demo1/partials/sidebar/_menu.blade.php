@@ -1,6 +1,6 @@
 @php
     $menu = bootstrap()->getAsideMenu();
-    \App\Core\Adapters\Menu::filterMenuPermissions($menu->items);
+    \App\Core\Adapters\Menu::filterMenuPermissions($menu->items); 
 @endphp
 
 <!--begin::sidebar menu-->
