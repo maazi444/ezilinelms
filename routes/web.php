@@ -27,9 +27,9 @@ array_walk($menu, function ($val) {
         $route = Route::get($val['path'], [PagesController::class, 'index']);
 
         // Exclude documentation from auth middleware
-        // if (!Str::contains($val['path'], 'documentation')) {
-        //     $route->middleware('auth');
-        // }
+        if (!Str::contains($val['path'], 'documentation')) {
+            $route->middleware('auth');
+        }
 
         // Custom page demo for 500 server error
         if (Str::contains($val['path'], 'error-500')) {
@@ -43,6 +43,7 @@ array_walk($menu, function ($val) {
 Route::middleware('auth')->group(function () {
     // Account pages
     Route::prefix('account')->group(function () {
+        Route::get('/users/view', [PagesController::class, 'UserView'])->name('users.view');
         Route::get('settings', [SettingsController::class, 'index'])->name('settings.index');
         Route::put('settings', [SettingsController::class, 'update'])->name('settings.update');
         Route::put('settings/email', [SettingsController::class, 'changeEmail'])->name('settings.changeEmail');

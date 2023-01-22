@@ -959,318 +959,7 @@
                     <!--end::Col-->
                 </div>
                 <!--end::Row-->
-                <!--begin::Row-->
-                <div class="row g-5 g-xl-10">
-                    <!--begin::Col-->
-                    <div class="col-xl-4 mb-xl-10">
-                        <!--begin::List widget 20-->
-                        <div class="card h-xl-100">
-                            <!--begin::Header-->
-                            <div class="card-header border-0 pt-5">
-                                <h3 class="card-title align-items-start flex-column">
-                                    <span class="card-label fw-bold text-dark">Recommended for you</span>
-                                    <span class="text-muted mt-1 fw-semibold fs-7">8k social visitors</span>
-                                </h3>
-                                <!--begin::Toolbar-->
-                                <div class="card-toolbar">
-                                    <a href="#" class="btn btn-sm btn-light">All Courses</a>
-                                </div>
-                                <!--end::Toolbar-->
-                            </div>
-                            <!--end::Header-->
-                            <!--begin::Body-->
-                            <div class="card-body pt-6">
-                                <!--begin::Item-->
-                                <div class="d-flex flex-stack">
-                                    <!--begin::Symbol-->
-                                    <div class="symbol symbol-40px me-4">
-                                        <div class="symbol-label fs-2 fw-semibold bg-danger text-inverse-danger">
-                                            M
-                                        </div>
-                                    </div>
-                                    <!--end::Symbol-->
-                                    <!--begin::Section-->
-                                    <div class="d-flex align-items-center flex-row-fluid flex-wrap">
-                                        <!--begin:Author-->
-                                        <div class="flex-grow-1 me-2">
-                                            <a href="../../demo1/dist/pages/user-profile/overview.html" class="text-gray-800 text-hover-primary fs-6 fw-bold">UI/UX Design</a>
-                                            <span class="text-muted fw-semibold d-block fs-7">40+ Courses</span>
-                                        </div>
-                                        <!--end:Author-->
-                                        <!--begin::Actions-->
-                                        <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
-                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
-                                            <span class="svg-icon svg-icon-2">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="currentColor" />
-                                                    <path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <!--end::Svg Icon-->
-                                        </a>
-                                        <!--begin::Actions-->
-                                    </div>
-                                    <!--end::Section-->
-                                </div>
-                                <!--end::Item-->
-                                <!--begin::Separator-->
-                                <div class="separator separator-dashed my-4"></div>
-                                <!--end::Separator-->
-                                <!--begin::Item-->
-                                <div class="d-flex flex-stack">
-                                    <!--begin::Symbol-->
-                                    <div class="symbol symbol-40px me-4">
-                                        <div class="symbol-label fs-2 fw-semibold bg-success text-inverse-success">
-                                            Q
-                                        </div>
-                                    </div>
-                                    <!--end::Symbol-->
-                                    <!--begin::Section-->
-                                    <div class="d-flex align-items-center flex-row-fluid flex-wrap">
-                                        <!--begin:Author-->
-                                        <div class="flex-grow-1 me-2">
-                                            <a href="../../demo1/dist/pages/user-profile/overview.html" class="text-gray-800 text-hover-primary fs-6 fw-bold">QA Analysis</a>
-                                            <span class="text-muted fw-semibold d-block fs-7">18 Courses</span>
-                                        </div>
-                                        <!--end:Author-->
-                                        <!--begin::Actions-->
-                                        <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
-                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
-                                            <span class="svg-icon svg-icon-2">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="currentColor" />
-                                                    <path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <!--end::Svg Icon-->
-                                        </a>
-                                        <!--begin::Actions-->
-                                    </div>
-                                    <!--end::Section-->
-                                </div>
-                                <!--end::Item-->
-                                <!--begin::Separator-->
-                                <div class="separator separator-dashed my-4"></div>
-                                <!--end::Separator-->
-                                <!--begin::Item-->
-                                <div class="d-flex flex-stack">
-                                    <!--begin::Symbol-->
-                                    <div class="symbol symbol-40px me-4">
-                                        <div class="symbol-label fs-2 fw-semibold bg-info text-inverse-info">
-                                            W
-                                        </div>
-                                    </div>
-                                    <!--end::Symbol-->
-                                    <!--begin::Section-->
-                                    <div class="d-flex align-items-center flex-row-fluid flex-wrap">
-                                        <!--begin:Author-->
-                                        <div class="flex-grow-1 me-2">
-                                            <a href="../../demo1/dist/pages/user-profile/overview.html" class="text-gray-800 text-hover-primary fs-6 fw-bold">Web Development</a>
-                                            <span class="text-muted fw-semibold d-block fs-7">120+ Courses</span>
-                                        </div>
-                                        <!--end:Author-->
-                                        <!--begin::Actions-->
-                                        <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
-                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
-                                            <span class="svg-icon svg-icon-2">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="currentColor" />
-                                                    <path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <!--end::Svg Icon-->
-                                        </a>
-                                        <!--begin::Actions-->
-                                    </div>
-                                    <!--end::Section-->
-                                </div>
-                                <!--end::Item-->
-                                <!--begin::Separator-->
-                                <div class="separator separator-dashed my-4"></div>
-                                <!--end::Separator-->
-                                <!--begin::Item-->
-                                <div class="d-flex flex-stack">
-                                    <!--begin::Symbol-->
-                                    <div class="symbol symbol-40px me-4">
-                                        <div class="symbol-label fs-2 fw-semibold bg-primary text-inverse-primary">
-                                            M
-                                        </div>
-                                    </div>
-                                    <!--end::Symbol-->
-                                    <!--begin::Section-->
-                                    <div class="d-flex align-items-center flex-row-fluid flex-wrap">
-                                        <!--begin:Author-->
-                                        <div class="flex-grow-1 me-2">
-                                            <a href="../../demo1/dist/pages/user-profile/overview.html" class="text-gray-800 text-hover-primary fs-6 fw-bold">Marketing</a>
-                                            <span class="text-muted fw-semibold d-block fs-7">50+ Courses.</span>
-                                        </div>
-                                        <!--end:Author-->
-                                        <!--begin::Actions-->
-                                        <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
-                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
-                                            <span class="svg-icon svg-icon-2">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="currentColor" />
-                                                    <path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <!--end::Svg Icon-->
-                                        </a>
-                                        <!--begin::Actions-->
-                                    </div>
-                                    <!--end::Section-->
-                                </div>
-                                <!--end::Item-->
-                                <!--begin::Separator-->
-                                <div class="separator separator-dashed my-4"></div>
-                                <!--end::Separator-->
-                                <!--begin::Item-->
-                                <div class="d-flex flex-stack">
-                                    <!--begin::Symbol-->
-                                    <div class="symbol symbol-40px me-4">
-                                        <div class="symbol-label fs-2 fw-semibold bg-warning text-inverse-warning">
-                                            P
-                                        </div>
-                                    </div>
-                                    <!--end::Symbol-->
-                                    <!--begin::Section-->
-                                    <div class="d-flex align-items-center flex-row-fluid flex-wrap">
-                                        <!--begin:Author-->
-                                        <div class="flex-grow-1 me-2">
-                                            <a href="../../demo1/dist/pages/user-profile/overview.html" class="text-gray-800 text-hover-primary fs-6 fw-bold">Philosophy</a>
-                                            <span class="text-muted fw-semibold d-block fs-7">24+ Courses</span>
-                                        </div>
-                                        <!--end:Author-->
-                                        <!--begin::Actions-->
-                                        <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
-                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
-                                            <span class="svg-icon svg-icon-2">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="currentColor" />
-                                                    <path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <!--end::Svg Icon-->
-                                        </a>
-                                        <!--begin::Actions-->
-                                    </div>
-                                    <!--end::Section-->
-                                </div>
-                                <!--end::Item-->
-                                <!--begin::Separator-->
-                                <div class="separator separator-dashed my-4"></div>
-                                <!--end::Separator-->
-                                <!--begin::Item-->
-                                <div class="d-flex flex-stack">
-                                    <!--begin::Symbol-->
-                                    <div class="symbol symbol-40px me-4">
-                                        <div class="symbol-label fs-2 fw-semibold bg-dark text-inverse-dark">
-                                            M
-                                        </div>
-                                    </div>
-                                    <!--end::Symbol-->
-                                    <!--begin::Section-->
-                                    <div class="d-flex align-items-center flex-row-fluid flex-wrap">
-                                        <!--begin:Author-->
-                                        <div class="flex-grow-1 me-2">
-                                            <a href="../../demo1/dist/pages/user-profile/overview.html" class="text-gray-800 text-hover-primary fs-6 fw-bold">Mathematics</a>
-                                            <span class="text-muted fw-semibold d-block fs-7">24+ Courses</span>
-                                        </div>
-                                        <!--end:Author-->
-                                        <!--begin::Actions-->
-                                        <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
-                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
-                                            <span class="svg-icon svg-icon-2">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="currentColor" />
-                                                    <path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <!--end::Svg Icon-->
-                                        </a>
-                                        <!--begin::Actions-->
-                                    </div>
-                                    <!--end::Section-->
-                                </div>
-                                <!--end::Item-->
-                            </div>
-                            <!--end::Body-->
-                        </div>
-                        <!--end::List widget 20-->
-                    </div>
-                    <!--end::Col-->
-                    <!--begin::Col-->
-                    <div class="col-xl-8 mb-5 mb-xl-10">
-                        <!--begin::Timeline Widget 1-->
-                        <div class="card card-flush h-xl-100">
-                            <!--begin::Card header-->
-                            <div class="card-header pt-5">
-                                <!--begin::Card title-->
-                                <h3 class="card-title align-items-start flex-column">
-                                    <span class="card-label fw-bold text-dark">Team Schedule</span>
-                                    <span class="text-gray-400 pt-2 fw-semibold fs-6">49 Acual Tasks</span>
-                                </h3>
-                                <!--end::Card title-->
-                                <!--begin::Card toolbar-->
-                                <div class="card-toolbar">
-                                    <!--begin::Tabs-->
-                                    <ul class="nav">
-                                        <li class="nav-item">
-                                            <a class="nav-link btn btn-sm btn-color-muted btn-active btn-active-light fw-bold px-4 me-1 active" data-kt-timeline-widget-1="tab" data-bs-toggle="tab" href="#kt_timeline_widget_1_tab_day">Day</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link btn btn-sm btn-color-muted btn-active btn-active-light fw-bold px-4 me-1" data-kt-timeline-widget-1="tab" data-bs-toggle="tab" href="#kt_timeline_widget_1_tab_week">Week</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link btn btn-sm btn-color-muted btn-active btn-active-light fw-bold px-4 me-1" data-kt-timeline-widget-1="tab" data-bs-toggle="tab" href="#kt_timeline_widget_1_tab_month">Month</a>
-                                        </li>
-                                    </ul>
-                                    <!--end::Tabs-->
-                                </div>
-                                <!--end::Card toolbar-->
-                            </div>
-                            <!--end::Card header-->
-                            <!--begin::Card body-->
-                            <div class="card-body pb-0">
-                                <!--begin::Tab content-->
-                                <div class="tab-content">
-                                    <!--begin::Tab pane-->
-                                    <div class="tab-pane active" id="kt_timeline_widget_1_tab_day" role="tabpanel" aria-labelledby="day-tab" data-kt-timeline-widget-1-blockui="true">
-                                        <div class="table-responsive pb-10">
-                                            <!--begin::Timeline-->
-                                            <div id="kt_timeline_widget_1_1" class="vis-timeline-custom h-350px min-w-700px" data-kt-timeline-widget-1-image-root="assets/media/"></div>
-                                            <!--end::Timeline-->
-                                        </div>
-                                    </div>
-                                    <!--end::Tab pane-->
-                                    <!--begin::Tab pane-->
-                                    <div class="tab-pane" id="kt_timeline_widget_1_tab_week" role="tabpanel" aria-labelledby="week-tab" data-kt-timeline-widget-1-blockui="true">
-                                        <div class="table-responsive pb-10">
-                                            <!--begin::Timeline-->
-                                            <div id="kt_timeline_widget_1_2" class="vis-timeline-custom h-350px min-w-700px" data-kt-timeline-widget-1-image-root="assets/media/"></div>
-                                            <!--end::Timeline-->
-                                        </div>
-                                    </div>
-                                    <!--end::Tab pane-->
-                                    <!--begin::Tab pane-->
-                                    <div class="tab-pane" id="kt_timeline_widget_1_tab_month" role="tabpanel" aria-labelledby="month-tab" data-kt-timeline-widget-1-blockui="true">
-                                        <div class="table-responsive pb-10">
-                                            <!--begin::Timeline-->
-                                            <div id="kt_timeline_widget_1_3" class="vis-timeline-custom h-350px min-w-700px" data-kt-timeline-widget-1-image-root="assets/media/"></div>
-                                            <!--end::Timeline-->
-                                        </div>
-                                    </div>
-                                    <!--end::Tab pane-->
-                                </div>
-                                <!--end::Tab content-->
-                            </div>
-                            <!--end::Card body-->
-                        </div>
-                        <!--end::Timeline Widget 1-->
-                    </div>
-                    <!--end::Col-->
-                </div>
-                <!--end::Row-->
+                
                 <!--begin::Row-->
                 <div class="row g-5 g-xl-10">
                     <!--begin::Col-->
@@ -1297,7 +986,7 @@
                                     <!--begin::Wrapper-->
                                     <div class="d-flex align-items-center me-3">
                                         <!--begin::Logo-->
-                                        <img src="assets/media/svg/brand-logos/laravel-2.svg" class="me-4 w-30px" alt="" />
+                                        <img src="{{ asset('demo1/media/svg/brand-logos/laravel-2.svg') }}" class="me-4 w-30px" alt="" />
                                         <!--end::Logo-->
                                         <!--begin::Section-->
                                         <div class="flex-grow-1">
@@ -1333,7 +1022,7 @@
                                     <!--begin::Wrapper-->
                                     <div class="d-flex align-items-center me-3">
                                         <!--begin::Logo-->
-                                        <img src="assets/media/svg/brand-logos/vue-9.svg" class="me-4 w-30px" alt="" />
+                                        <img src="{{ asset('demo1/media/svg/brand-logos/vue-9.svg') }}" class="me-4 w-30px" alt="" />
                                         <!--end::Logo-->
                                         <!--begin::Section-->
                                         <div class="flex-grow-1">
@@ -1369,7 +1058,7 @@
                                     <!--begin::Wrapper-->
                                     <div class="d-flex align-items-center me-3">
                                         <!--begin::Logo-->
-                                        <img src="assets/media/svg/brand-logos/bootstrap5.svg" class="me-4 w-30px" alt="" />
+                                        <img src="{{ asset('demo1/media/svg/brand-logos/bootstrap5.svg') }}" class="me-4 w-30px" alt="" />
                                         <!--end::Logo-->
                                         <!--begin::Section-->
                                         <div class="flex-grow-1">
@@ -1405,7 +1094,7 @@
                                     <!--begin::Wrapper-->
                                     <div class="d-flex align-items-center me-3">
                                         <!--begin::Logo-->
-                                        <img src="assets/media/svg/brand-logos/angular-icon.svg" class="me-4 w-30px" alt="" />
+                                        <img src="{{ asset('demo1/media/svg/brand-logos/angular-icon.svg') }}" class="me-4 w-30px" alt="" />
                                         <!--end::Logo-->
                                         <!--begin::Section-->
                                         <div class="flex-grow-1">
@@ -1441,7 +1130,7 @@
                                     <!--begin::Wrapper-->
                                     <div class="d-flex align-items-center me-3">
                                         <!--begin::Logo-->
-                                        <img src="assets/media/svg/brand-logos/spring-3.svg" class="me-4 w-30px" alt="" />
+                                        <img src="{{ asset('demo1/media/svg/brand-logos/spring-3.svg') }}" class="me-4 w-30px" alt="" />
                                         <!--end::Logo-->
                                         <!--begin::Section-->
                                         <div class="flex-grow-1">
@@ -1477,7 +1166,7 @@
                                     <!--begin::Wrapper-->
                                     <div class="d-flex align-items-center me-3">
                                         <!--begin::Logo-->
-                                        <img src="assets/media/svg/brand-logos/typescript-1.svg" class="me-4 w-30px" alt="" />
+                                        <img src="{{ asset('demo1/media/svg/brand-logos/typescript-1.svg') }}" class="me-4 w-30px" alt="" />
                                         <!--end::Logo-->
                                         <!--begin::Section-->
                                         <div class="flex-grow-1">

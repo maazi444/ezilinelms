@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Support\Facades\File;
 
 class PagesController extends Controller
@@ -55,5 +56,11 @@ class PagesController extends Controller
 
             file_put_contents($file->getPathname(), $bladeFileContent);
         }
+    }
+
+    public function UserView()
+    {
+        $data['allRecords'] = User::all();
+        return view('pages.users.view_users', $data);
     }
 }

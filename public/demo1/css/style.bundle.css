@@ -49065,12 +49065,3 @@ html:not([data-theme=dark]) {
     color: #ffffff !important;
   }
 }
-
-.formActive{
-  display: block;
-}
-
-.signup-form button:nth-of-type(1)
-{
-  display: none;
-}

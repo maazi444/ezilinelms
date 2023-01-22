@@ -11,7 +11,8 @@
 			<!--begin::Username-->
 			<div class="d-flex flex-column">
 				<div class="fw-bold d-flex align-items-center fs-5">Max Smith
-				<span class="badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2">Pro</span></div>
+					<span class="badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2">Pro</span>
+				</div>
 				<a href="#" class="fw-semibold text-muted text-hover-primary fs-7">max@kt.com</a>
 			</div>
 			<!--end::Username-->
@@ -62,7 +63,7 @@
 			<!--begin::Menu item-->
 			<div class="menu-item px-3">
 				<a href="#" class="menu-link d-flex flex-stack px-5">Statements
-				<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="View your statements"></i></a>
+					<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="View your statements"></i></a>
 			</div>
 			<!--end::Menu item-->
 			<!--begin::Menu separator-->
@@ -94,49 +95,49 @@
 	<div class="menu-item px-5" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="left-start">
 		<a href="#" class="menu-link px-5">
 			<span class="menu-title position-relative">Language
-			<span class="fs-8 rounded bg-light px-3 py-2 position-absolute translate-middle-y top-50 end-0">English
-			<img class="w-15px h-15px rounded-1 ms-2" src="{{ asset(theme()->getMediaUrlPath() . 'flags/united-states.svg') }}" alt="" /></span></span>
+				<span class="fs-8 rounded bg-light px-3 py-2 position-absolute translate-middle-y top-50 end-0">English
+					<img class="w-15px h-15px rounded-1 ms-2" src="{{ asset(theme()->getMediaUrlPath() . 'flags/united-states.svg') }}" alt="" /></span></span>
 		</a>
 		<!--begin::Menu sub-->
 		<div class="menu-sub menu-sub-dropdown w-175px py-4">
 			<!--begin::Menu item-->
 			<div class="menu-item px-3">
 				<a href="#" class="menu-link d-flex px-5 active">
-				<span class="symbol symbol-20px me-4">
-					<img class="rounded-1" src="{{ asset(theme()->getMediaUrlPath() . 'flags/united-states.svg') }}" alt="" />
-				</span>English</a>
+					<span class="symbol symbol-20px me-4">
+						<img class="rounded-1" src="{{ asset(theme()->getMediaUrlPath() . 'flags/united-states.svg') }}" alt="" />
+					</span>English</a>
 			</div>
 			<!--end::Menu item-->
 			<!--begin::Menu item-->
 			<div class="menu-item px-3">
 				<a href="#" class="menu-link d-flex px-5">
-				<span class="symbol symbol-20px me-4">
-					<img class="rounded-1" src="{{ asset(theme()->getMediaUrlPath() . 'flags/spain.svg') }}" alt="" />
-				</span>Spanish</a>
+					<span class="symbol symbol-20px me-4">
+						<img class="rounded-1" src="{{ asset(theme()->getMediaUrlPath() . 'flags/spain.svg') }}" alt="" />
+					</span>Spanish</a>
 			</div>
 			<!--end::Menu item-->
 			<!--begin::Menu item-->
 			<div class="menu-item px-3">
 				<a href="#" class="menu-link d-flex px-5">
-				<span class="symbol symbol-20px me-4">
-					<img class="rounded-1" src="{{ asset(theme()->getMediaUrlPath() . 'flags/germany.svg') }}" alt="" />
-				</span>German</a>
+					<span class="symbol symbol-20px me-4">
+						<img class="rounded-1" src="{{ asset(theme()->getMediaUrlPath() . 'flags/germany.svg') }}" alt="" />
+					</span>German</a>
 			</div>
 			<!--end::Menu item-->
 			<!--begin::Menu item-->
 			<div class="menu-item px-3">
 				<a href="#" class="menu-link d-flex px-5">
-				<span class="symbol symbol-20px me-4">
-					<img class="rounded-1" src="{{ asset(theme()->getMediaUrlPath() . 'flags/japan.svg') }}" alt="" />
-				</span>Japanese</a>
+					<span class="symbol symbol-20px me-4">
+						<img class="rounded-1" src="{{ asset(theme()->getMediaUrlPath() . 'flags/japan.svg') }}" alt="" />
+					</span>Japanese</a>
 			</div>
 			<!--end::Menu item-->
 			<!--begin::Menu item-->
 			<div class="menu-item px-3">
 				<a href="#" class="menu-link d-flex px-5">
-				<span class="symbol symbol-20px me-4">
-					<img class="rounded-1" src="{{ asset(theme()->getMediaUrlPath() . 'flags/france.svg') }}" alt="" />
-				</span>French</a>
+					<span class="symbol symbol-20px me-4">
+						<img class="rounded-1" src="{{ asset(theme()->getMediaUrlPath() . 'flags/france.svg') }}" alt="" />
+					</span>French</a>
 			</div>
 			<!--end::Menu item-->
 		</div>
@@ -150,9 +151,9 @@
 	<!--end::Menu item-->
 	<!--begin::Menu item-->
 	<div class="menu-item px-5">
-        <a href="#" data-action="{{ route('logout') }}" data-method="post" data-csrf="{{ csrf_token() }}" data-reload="true" class="button-ajax menu-link px-5">
-            {{ __('Sign Out') }}
-        </a>
+		<a href="#" data-action="{{ route('logout') }}" data-method="post" data-csrf="{{ csrf_token() }}" data-reload="true" class="button-ajax menu-link px-5">
+			{{ __('Sign Out') }}
+		</a>
 	</div>
 	<!--end::Menu item-->
 </div>

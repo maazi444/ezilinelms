@@ -17,15 +17,14 @@ class CreateUserInfosTable extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->text('avatar')->nullable();
-            $table->string('company')->nullable();
-            $table->string('phone')->nullable();
-            $table->string('website')->nullable();
-            $table->string('country')->nullable();
-            $table->string('language')->nullable();
-            $table->string('timezone')->nullable();
-            $table->string('currency')->nullable();
-            $table->string('communication')->nullable();
-            $table->tinyInteger('marketing')->nullable();
+            $table->string('phone');
+            $table->string('dob');
+            $table->bigInteger('cnic');
+            $table->string('degree');
+            $table->string('university');
+            $table->integer('duration');
+            $table->string('environment');
+            $table->string('shift');
             $table->timestamps();
         });
     }
